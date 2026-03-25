@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Cadastro de Canditado</title>
+</head>
+<body>
+    <h1>Currículo - Cadastro de Canditado</h1>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label>Nome completo:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Data de nascimento:</label><br>
+        <input type="date" name="nascimento"><br><br>
+
+        <label>E-mail:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone"><br><br>
+
+        <label>Endereço Completo:</label><br>
+        <textarea name="endereco" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Formação acadêmica</legend>
+
+        <label>Nivel de escolaridade:</label><br>
+        <select name="Nivel">
+            <option value="Ensino médio ">Ensino Médio</option>
+            <option value="Técnico">Técnico</option>
+            <option value="Graduação">Graduação</option>
+            <option value="Pós-Graduação">Pós-Graduação</option>
+        </select><br><br>
+
+        <label>Instituição de ensino:</label><br>
+        <input type="text" name="instituição"><br><br>
+
+        <label>Ano de conclusão</label><br>
+        <input type="date" name="ano"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Experiência profissional:</legend>
+
+        <label>Ultima Empresa:</label><br>
+        <input type="text" name="empresa"><br><br>
+
+        <label>Cargo ocupado:</label><br>
+        <input type="text" name="cargo"><br><br>
+        
+        <label>Período de atuação (inicio)</label><br>
+        <input type="date" name="data_inicio"><br><br>
+
+        <label>Data de atuação (fim)</label><br>
+        <input type="date" name="data_fim"><br><br>
+
+        <label>Principais atividades:</label><br>
+        <textarea name="atividades" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Competências e habilidades</legend>
+
+        <label>Idiomas:</label><br>
+        <input type="checkbox" name="idiomas[]" value="ingles">Inglês <br>
+        <input type="checkbox" name="idiomas[]" value="espanhol">Espanhol <br>
+        <input type="checkbox" name="idiomas[]" value="frances">Francês <br>
+        <input type="checkbox" name="idiomas[]" value="outros">Outros <br>
+        <br><br>
+        
+
+        <label>Ferramentas/softawres dominados:</label><br>
+        <textarea name="ferramentas" rows="5"></textarea><br><br>
+
+        <label>Habilidade interpessoais:</label><br>
+        <input type="checkbox" name="habilidade[]" value="trabalho em equipe">Trabalho em equipe
+        <input type="checkbox" name="habilidade[]" value="liderança">Liderança
+        <input type="checkbox" name="habilidade[]" value="comunicação">Comunicação
+        <input type="checkbox" name="habilidade[]" value="organização">Organização
+    </fieldset>
+
+    <fieldset>
+        <legend>Anexos:</legend>
+
+        <label>Upload de currículo em PDF</label><br>
+        <input type="file" name="PDF"><br><br>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+</form>
+    
+</body>
+</html>
